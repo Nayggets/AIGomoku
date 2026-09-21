@@ -7,6 +7,7 @@
 #include "AIOpen.hpp"
 #include "BasicEvaluateFunction.hpp"
 #include "ElaborateEvaluateFunction.hpp"
+#include "JumpEvaluateFunction.hpp"
 
 enum IdMode{
     PLAYER_VS_PLAYER = 1,

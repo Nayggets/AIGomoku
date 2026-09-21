@@ -86,8 +86,10 @@ void GameManager::playerVersusIA()
     //Launch One player vs IA mode
     BoardGame* board = BoardGame::getInstance();
     int value[] = {1,10,100,1000,10000,100000,1000000};
+    int value2[] = {1,10,100,1000,10000,100000};
     BasicEvaluateFunction* func = new BasicEvaluateFunction();
     ElaborateEvaluateFunction* func2 = new ElaborateEvaluateFunction(value);
+    JumpEvaluateFunction* func3 = new JumpEvaluateFunction(value2);
     AIGomoku* AI = new AIOpen(idPlayer::p2,5,func2);
     idPlayer playerTurn = idPlayer::p1;
     bool gameFinish = false;
